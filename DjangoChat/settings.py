@@ -82,7 +82,17 @@ CHANNEL_LAYERS = {
     }
 }
 
-
+#redis pip install asgi_redis
+"""
+CACHES = {
+    'default': {
+        'BACKEND': 'django.core.cache.backends.redis.RedisCache',
+        'LOCATION': 'redis://ip:port'
+    }
+}
+#127.0.0.1:6379
+#if authenticated, 'redis://username:password@127.0.0.1:6379
+"""
 # Database
 # https://docs.djangoproject.com/en/4.1/ref/settings/#databases
 
